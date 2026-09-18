@@ -18,7 +18,7 @@ SB_HEADERS = {
     "Content-Type": "application/json",
 }
 RESULTS_BUCKET = "results"
-NOTIFICATIONS_URL = "https://njyvnmczoydsaewvfhyq.supabase.co/rest/v1/notifications"
+NOTIFICATIONS_URL = f"{SUPABASE_URL}/rest/v1/notifications"
 
 def download_file(bucket, file_path):
     if file_path.startswith(bucket + "/"):
